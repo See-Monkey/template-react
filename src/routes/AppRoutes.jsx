@@ -6,15 +6,15 @@ import Login from "../pages/Login/Login.jsx";
 import ErrorPage from "../pages/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <App />,
-		errorElement: <ErrorPage />,
-		children: [
-			{ index: true, element: <Home /> },
-			{ path: "login", element: <Login /> },
-		],
-	},
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "login", element: <Login /> },
+    ],
+  },
 ]);
 
 export default router;

@@ -9,9 +9,9 @@ import AppRoutes from "./routes/AppRoutes.jsx";
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<QueryClientProvider client={queryClient}>
-			<RouterProvider router={AppRoutes} />
-		</QueryClientProvider>
-	</StrictMode>,
+  <StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={AppRoutes} />
+    </QueryClientProvider>
+  </StrictMode>,
 );
